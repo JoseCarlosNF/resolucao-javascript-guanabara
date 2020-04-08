@@ -1,7 +1,7 @@
 function d006() {
   const resp = window.document.getElementById("saida");
 
-  let temperature = Number(prompt("Digite uma temperatura em ºC (Celsius)"));
+  let temperature = Number(prompt("Digite uma temperatura em °C (Celsius)"));
 
   let converted = {
     Kelvin: (temperature + 273).toLocaleString("pt-BR"),
@@ -14,7 +14,7 @@ function d006() {
   <p><b>A temperatura de ${temperature.toLocaleString(
     "pt-BR"
   )}ºC, corrensponde a... </b></p>
-  <p> ${converted.Kelvin}ºK (Kelvin)</p>
-  <p> ${converted.Fahrenheit}ºF (Fahrenheit)</p>
+  <p> ${converted.Kelvin}°K (Kelvin)</p>
+  <p> ${converted.Fahrenheit}°F (Fahrenheit)</p>
   `;
 }

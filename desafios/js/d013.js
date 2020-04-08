@@ -9,9 +9,9 @@ function d013() {
 
   const { resultado, className } = analise(media);
 
-  nota1 = nota1.toFixed(2).toString().replace(".", ",");
-  nota2 = nota2.toFixed(2).toString().replace(".", ",");
-  media = media.toFixed(2).toString().replace(".", ",");
+  nota1 = nota1.toLocaleString("pt-BR");
+  nota2 = nota2.toLocaleString("pt-BR");
+  media = media.toLocaleString("pt-BR");
 
   resp.innerHTML = `
   <h2>Analisando a situação de ${nome}</h2>
@@ -27,7 +27,7 @@ function analise(media) {
       className: "reprovado",
     };
   }
-  if (media >= 3 && media <= 6) {
+  if (3 <= media && media <= 6) {
     return {
       resultado: "em recuperação",
       className: "recuperacao",
