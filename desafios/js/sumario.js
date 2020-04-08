@@ -7,6 +7,7 @@ const desafios_obj = {
   d004: "Calculando o Troco",
   d005: "Conversor de Medidas",
   d006: "Conversor de Temperaturas",
+  d007: "Conversor de BRL 🠞 USD",
   d013: "Situação do aluno",
 };
 

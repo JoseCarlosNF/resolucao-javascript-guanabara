@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!-- Carregar script antes de renderizar os componentes da página -->
+    <script type="text/javascript">
+      const cotacao_usd = (() => {
+        return prompt(
+          "Antes de mais nada. Quanto está a contação do dólar agora?"
+        );
+      })();
+    </script>
+    <!-- ------------------------------------------------------------ -->
+
+    <title>Desafio 007</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de BRL 🠞 USD</h1>
+      <div class="container-botoes">
+        <button onclick="d007()">Converter</button>
+      </div>
+
+      <section id="saida">
+        <p>Clique no botão acima para iniciar.</p>
+      </section>
+    </div>
+
+    <div class="container-desafios">
+      <h2>Outros desafios:</h2>
+      <ul id="UL"></ul>
+    </div>
+
+    <script src="./js/d007.js"></script>
+    <script src="./js/sumario.js"></script>
+  </body>
+</html>
