@@ -13,8 +13,6 @@ const desafios_obj = {
   d010: "Resolvendo de Bhaskara",
   d011: "Ano Bissexto",
   d012: "Preço antes, preço depois",
-  d013: "Situação do aluno",
-};
 
 Object.keys(desafios_obj).map((element) => {
   resp.innerHTML += `<li><a href="./${element}.html"><b>${element}</b> - ${desafios_obj[element]}</a></li>`;

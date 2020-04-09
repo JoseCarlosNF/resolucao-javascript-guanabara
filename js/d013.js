@@ -27,6 +27,7 @@ function analise(media) {
       className: "reprovado",
     };
   }
+
   if (3 <= media && media <= 6) {
     return {
       resultado: "em recuperação",
