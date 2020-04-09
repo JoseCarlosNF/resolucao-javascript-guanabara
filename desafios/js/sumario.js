@@ -8,9 +8,14 @@ const desafios_obj = {
   d005: "Conversor de Medidas",
   d006: "Conversor de Temperaturas",
   d007: "Conversor de BRL 🠞 USD",
+  d008: "Desconto de 10%",
+  d009: "Reajuste Salarial",
+  d010: "Resolvendo de Bhaskara",
+  d011: "Ano Bissexto",
+  d012: "Preço antes, preço depois",
   d013: "Situação do aluno",
 };
 
 Object.keys(desafios_obj).map((element) => {
-  resp.innerHTML += `<li><a href="./${element}.html">${element} - ${desafios_obj[element]}</a></li>`;
+  resp.innerHTML += `<li><a href="./${element}.html"><b>${element}</b> - ${desafios_obj[element]}</a></li>`;
 });
