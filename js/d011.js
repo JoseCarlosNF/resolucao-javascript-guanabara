@@ -14,7 +14,7 @@ function d011() {
 function bissexto(year) {
   let result = (year / 4).toFixed(1);
 
-  if (result[4] == 0) {
+  if (result[result.indexOf(".") + 1] == 0) {
     return {
       class: "aprovado",
       text: "É BISSEXTO",
