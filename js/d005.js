@@ -1,7 +1,7 @@
 function d005() {
   const resp = window.document.getElementById("saida");
 
-  let mensure = prompt("Digite uma distância em metros (m)");
+  let mensure = prompt("Digite uma distância em metros (m)").replace(",", ".");
 
   let converted = {
     "quilômetros (Km)": (mensure / 1000).toLocaleString("pt-BR"),

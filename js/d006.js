@@ -1,7 +1,7 @@
 function d006() {
   const resp = window.document.getElementById("saida");
 
-  let temperature = Number(prompt("Digite uma temperatura em °C (Celsius)"));
+  let temperature = Number(prompt("Digite uma temperatura em °C (Celsius)").replace(",", "."));
 
   let converted = {
     Kelvin: (temperature + 273).toLocaleString("pt-BR"),

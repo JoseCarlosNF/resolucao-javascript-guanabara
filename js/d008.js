@@ -2,7 +2,7 @@ function d008() {
   const resp = window.document.getElementById("saida");
 
   let product_name = prompt("Qual é o produto que você está comprando?");
-  let product_price = prompt(`Qual é o preço de ${product_name}`);
+  let product_price = prompt(`Qual é o preço de ${product_name}`).replace(",", ".");
   let discount = product_price * 0.1;
   let final_price = product_price - discount;
 
