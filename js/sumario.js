@@ -16,5 +16,5 @@ const desafios_obj = {
 };
 
 Object.keys(desafios_obj).map((element) => {
-  resp.innerHTML += `<li><a href="./${element}.html"><b>${element}</b> - ${desafios_obj[element]}</a></li>`;
+  resp.innerHTML += `<li><a href="./html/${element}.html"><b>${element}</b> - ${desafios_obj[element]}</a></li>`;
 });
