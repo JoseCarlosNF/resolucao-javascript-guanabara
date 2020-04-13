@@ -3,7 +3,7 @@ function d007() {
 
   let reais = prompt("Quantos R$ você tem na carteira?");
 
-  let dolares = reais * cotacao_usd;
+  let dolares = reais / cotacao_usd;
 
   resp.innerHTML = `<p>${Intl.NumberFormat("pt-BR", {
     style: "currency",
